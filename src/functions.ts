@@ -6,6 +6,7 @@
  */
 function printName(name: string): void {
   // write your code here
+  console.log(name);
 }
 
 /**
@@ -16,6 +17,8 @@ function printName(name: string): void {
  * - Age = current year - birth
  */
 function printAge(birthYear: number): void {
+  let age = 2025 - birthYear;
+  console.log(age);
   // write your code here
 }
 
@@ -40,6 +43,10 @@ type LanguageType = "en" | "es" | "fr" | "tr";
 
 function printHello(name: string, language: LanguageType): void {
   // write your code here
+  if (language === "en") console.log(`Hello ${name}`);
+  else if (language === "es") console.log(`Hola,${name}`);
+  else if (language === "fr") console.log(`Bonjour,${name}`);
+  else if (language === "tr") console.log(`Marhaba,${name}`);
 }
 
 // example:
@@ -56,8 +63,15 @@ printHello("Aziz", "fr"); // => "Bonjour Aziz"
  */
 function printMax(x: number, y: number) {
   // write your code here
+  let MaxNum = x > y;
+  if (x > y) {
+    console.log(x);
+    return x;
+  } else {
+    console.log(y);
+    return y;
+  }
 }
-
 // example:
 printMax(4, 7); // => 7
 
